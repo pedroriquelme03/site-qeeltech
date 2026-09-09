@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QeeL Tech — Desenvolvimento de Software, Apps e Sistemas Web</title>
+<meta name="description" content="QeeL Tech: aplicativos mobile, sites WordPress, sistemas web, plugins, e-mail profissional, SEO e produtos digitais sob medida para o seu negócio.">
+<meta name="theme-color" content="#13032D">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:title" content="QeeL Tech — Tecnologia que impulsiona o seu negócio">
+<meta property="og:description" content="Aplicativos, sites, sistemas e produtos digitais sob medida.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a href="#home" class="brand" aria-label="QeeL Tech — início">
+      <img src="assets/logo-white.svg" alt="QeeL" style="height:30px;width:auto">
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#hospedagem">Hospedagem</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-wa btn-sm" href="#" data-wa="Olá! Vim pelo site da QeeL Tech e gostaria de conversar.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 4.9 16L4 20l4.1-1.1a7.9 7.9 0 0 0 3.8 1 8 8 0 0 0 5.7-13.6ZM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.4.6.6-2.3-.2-.2a6.6 6.6 0 1 1 5.6 3.2Zm3.6-4.9c-.2-.1-1.2-.6-1.4-.6-.2-.1-.3-.1-.4.1l-.6.7c-.1.1-.2.2-.4.1a5.4 5.4 0 0 1-2.7-2.3c-.2-.3.2-.3.5-1 .1-.1 0-.3 0-.4l-.6-1.4c-.2-.4-.3-.3-.5-.3h-.4a.8.8 0 0 0-.6.3 2.4 2.4 0 0 0-.7 1.8c0 1 .8 2.1 1 2.3.1.1 1.5 2.4 3.7 3.3 1.4.6 1.9.6 2.6.5.4 0 1.2-.5 1.4-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3Z"/></svg>
+        WhatsApp
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close" id="menuClose" aria-label="Fechar menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="#servicos">Serviços</a>
+  <a href="#produtos">Produtos</a>
+  <a href="#hospedagem">Hospedagem</a>
+  <a href="#contato">Contato</a>
+  <a class="btn btn-wa" href="#" data-wa="Olá! Vim pelo site da QeeL Tech e gostaria de conversar.">Falar no WhatsApp</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow reveal">Software house · Foz do Iguaçu &amp; região</span>
+      <h1 class="reveal d1">
+        Tecnologia que constrói
+        <span class="rotator"><span class="rotate-word" id="rotator">aplicativos</span><span class="rotate-caret"></span></span>
+      </h1>
+      <p class="lead reveal d2">
+        Na <b>QeeL Tech</b> transformamos ideias em produtos digitais: apps, sites, sistemas web e
+        soluções sob medida que colocam o seu negócio para crescer.
+      </p>
+      <div class="hero-actions reveal d3">
+        <a class="btn btn-wa" href="#" data-wa="Olá! Quero tirar minha ideia do papel com a QeeL Tech. Podemos conversar?">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 4.9 16L4 20l4.1-1.1a7.9 7.9 0 0 0 3.8 1 8 8 0 0 0 5.7-13.6ZM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.4.6.6-2.3-.2-.2a6.6 6.6 0 1 1 5.6 3.2Zm3.6-4.9c-.2-.1-1.2-.6-1.4-.6-.2-.1-.3-.1-.4.1l-.6.7c-.1.1-.2.2-.4.1a5.4 5.4 0 0 1-2.7-2.3c-.2-.3.2-.3.5-1 .1-.1 0-.3 0-.4l-.6-1.4c-.2-.4-.3-.3-.5-.3h-.4a.8.8 0 0 0-.6.3 2.4 2.4 0 0 0-.7 1.8c0 1 .8 2.1 1 2.3.1.1 1.5 2.4 3.7 3.3 1.4.6 1.9.6 2.6.5.4 0 1.2-.5 1.4-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3Z"/></svg>
+          Começar meu projeto
+        </a>
+        <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="hero-stats reveal d3">
+        <div class="stat"><b data-count="120">0</b><span>Projetos entregues</span></div>
+        <div class="stat"><b data-count="80">0</b><span>Clientes atendidos</span></div>
+        <div class="stat"><b data-count="20">0</b><span>Soluções digitais</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <span class="mouse"></span>
+    Role
+  </div>
+</section>
+
+<!-- ============ CLIENTES ============ -->
+<section class="clients" id="clientes" aria-label="Clientes atendidos">
+  <div class="container">
+    <p class="kicker">Empresas que já confiaram na QeeL Tech</p>
+    <div class="marquee">
+      <div class="marquee-track" id="clientTrack"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOSPEDAGEM / NAPOLEON ============ -->
+<section class="napoleon" id="hospedagem">
+  <div class="container">
+    <div class="wrap reveal">
+      <div class="host-content">
+        <span class="badge-host">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5 16 3 5l5.5 4L12 3l3.5 6L21 5l-2 11H5Zm0 2h14v2H5v-2Z"/></svg>
+          Hospedagem recomendada
+        </span>
+        <h2>Seu site rápido e estável com a <span class="text-grad">Napoleon Host</span></h2>
+        <p>A QeeL Tech recomenda a Napoleon Host para hospedar seus projetos: servidores de alta performance, painel simples e suporte que resolve. A base ideal para sites, lojas e sistemas que criamos para você.</p>
+        <ul class="host-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> SSD NVMe veloz</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> SSL grátis</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Suporte nacional</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Uptime garantido</li>
+        </ul>
+      </div>
+      <div class="host-visual">
+        <div class="crown text-grad">Napoleon<br>Host</div>
+        <div class="host-actions" style="margin-top:22px">
+          <a class="btn btn-primary" href="https://painel.napoleon.com.br/aff.php?aff=1181" target="_blank" rel="noopener sponsored">
+            Contratar hospedagem
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+          <a class="btn btn-wa btn-sm" href="#" data-wa="Olá! Quero ajuda da QeeL Tech para escolher e configurar a hospedagem Napoleon Host.">Falar com um especialista</a>
+        </div>
+        <p class="disc">Link de indicação oficial · configuramos tudo para você</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Serviços sob medida para o <span class="text-grad">seu negócio</span></h2>
+      <p>Da ideia à publicação: desenvolvemos, integramos e damos suporte à sua operação digital.</p>
+    </div>
+    <div class="grid-services" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PRODUTOS (SLIDER) ============ -->
+<section class="products" id="produtos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Soluções prontas</span>
+      <h2>Produtos digitais que <span class="text-grad">geram resultado</span></h2>
+      <p>Sistemas e plataformas prontas para acelerar o seu negócio — personalizamos cada uma para a sua realidade.</p>
+    </div>
+    <div class="slider reveal" aria-roledescription="carrossel" aria-label="Produtos QeeL Tech">
+      <div class="slider-viewport">
+        <div class="slider-track" id="productTrack"></div>
+      </div>
+      <div class="slider-nav">
+        <button class="slider-btn" id="prevBtn" aria-label="Produto anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <span class="slider-count" id="sliderCount">01 / 21</span>
+        <button class="slider-btn" id="nextBtn" aria-label="Próximo produto">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <div class="slider-dots" id="sliderDots" role="tablist" style="margin:22px auto 0"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="contact" id="contato">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-aside reveal">
+        <span class="eyebrow">Fale conosco</span>
+        <h2>Vamos tirar sua ideia <span class="text-grad">do papel?</span></h2>
+        <p>Conte o que você precisa. Respondemos rápido e sem enrolação — do orçamento à entrega, a QeeL Tech acompanha cada etapa.</p>
+        <div class="contact-methods">
+          <a class="contact-method" href="#" data-wa="Olá! Gostaria de solicitar um orçamento com a QeeL Tech.">
+            <span class="cm-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 4.9 16L4 20l4.1-1.1a7.9 7.9 0 0 0 3.8 1 8 8 0 0 0 5.7-13.6ZM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.4.6.6-2.3-.2-.2a6.6 6.6 0 1 1 5.6 3.2Z"/></svg></span>
+            <div><b>WhatsApp</b><span>(45) 99125-4300 · resposta rápida</span></div>
+          </a>
+          <div class="contact-method">
+            <span class="cm-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg></span>
+            <div><b>E-mail</b><span>contato@qeel.com.br</span></div>
+          </div>
+          <div class="contact-method">
+            <span class="cm-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><b>Atendimento</b><span>Foz do Iguaçu · PR e todo o Brasil (remoto)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal d1" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@email.com">
+        </div>
+        <div class="field">
+          <label for="assunto">O que você precisa?</label>
+          <select id="assunto" name="assunto">
+            <option>Aplicativo mobile</option>
+            <option>Site WordPress</option>
+            <option>Sistema web</option>
+            <option>Loja virtual / E-commerce</option>
+            <option>Criação de plugin</option>
+            <option>E-mail profissional</option>
+            <option>Suporte / Hospedagem</option>
+            <option>SEO</option>
+            <option>Outro produto ou serviço</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o seu projeto..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 4.9 16L4 20l4.1-1.1a7.9 7.9 0 0 0 3.8 1 8 8 0 0 0 5.7-13.6ZM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.4.6.6-2.3-.2-.2a6.6 6.6 0 1 1 5.6 3.2Z"/></svg>
+          Enviar pelo WhatsApp
+        </button>
+        <p class="form-note">Ao enviar, sua mensagem abre no WhatsApp já preenchida. Sem spam, prometido.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-white.svg" alt="QeeL Tech" style="height:30px;width:auto">
+        <p>Software house especializada em apps, sites e sistemas web. Tecnologia sob medida para o seu negócio crescer.</p>
+        <div class="footer-social">
+          <a href="#" data-wa="Olá QeeL Tech!" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 4.9 16L4 20l4.1-1.1a7.9 7.9 0 0 0 3.8 1 8 8 0 0 0 5.7-13.6ZM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.4.6.6-2.3-.2-.2a6.6 6.6 0 1 1 5.6 3.2Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4 0 4.75 2.65 4.75 6.1V21H17.5v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21H9V9Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <a href="#servicos">Aplicativos mobile</a>
+        <a href="#servicos">Sites WordPress</a>
+        <a href="#servicos">Sistemas web</a>
+        <a href="#servicos">Criação de plugins</a>
+        <a href="#servicos">SEO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Produtos</h4>
+        <a href="#produtos">Loja virtual</a>
+        <a href="#produtos">Cardápio digital</a>
+        <a href="#produtos">Sistema de delivery</a>
+        <a href="#produtos">Agendamento online</a>
+        <a href="#produtos">CRM</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="#" data-wa="Olá! Vim pelo site da QeeL Tech.">(45) 99125-4300</a>
+        <a href="mailto:contato@qeel.com.br">contato@qeel.com.br</a>
+        <a href="https://painel.napoleon.com.br/aff.php?aff=1181" target="_blank" rel="noopener sponsored">Hospedagem Napoleon Host</a>
+        <a href="#contato">Solicitar orçamento</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> QeeL Tech. Todos os direitos reservados.</span>
+      <span>Feito com tecnologia e cafeína ☕ em Foz do Iguaçu.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a class="wa-float" href="#" data-wa="Olá! Vim pelo site da QeeL Tech e gostaria de mais informações." aria-label="Falar no WhatsApp">
+  <span class="wa-tip">Fale conosco!</span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.3A7.9 7.9 0 0 0 4.9 16L4 20l4.1-1.1a7.9 7.9 0 0 0 3.8 1 8 8 0 0 0 5.7-13.6ZM12 18.5c-1.2 0-2.4-.3-3.4-.9l-.2-.1-2.4.6.6-2.3-.2-.2a6.6 6.6 0 1 1 5.6 3.2Zm3.6-4.9c-.2-.1-1.2-.6-1.4-.6-.2-.1-.3-.1-.4.1l-.6.7c-.1.1-.2.2-.4.1a5.4 5.4 0 0 1-2.7-2.3c-.2-.3.2-.3.5-1 .1-.1 0-.3 0-.4l-.6-1.4c-.2-.4-.3-.3-.5-.3h-.4a.8.8 0 0 0-.6.3 2.4 2.4 0 0 0-.7 1.8c0 1 .8 2.1 1 2.3.1.1 1.5 2.4 3.7 3.3 1.4.6 1.9.6 2.6.5.4 0 1.2-.5 1.4-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
