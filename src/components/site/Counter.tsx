@@ -2,7 +2,15 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export function Counter({ target, suffix = "+" }: { target: number; suffix?: string }) {
+export function Counter({
+  target,
+  suffix = "+",
+  className,
+}: {
+  target: number;
+  suffix?: string;
+  className?: string;
+}) {
   const ref = useRef<HTMLElement>(null);
   const [val, setVal] = useState(0);
 
@@ -38,7 +46,7 @@ export function Counter({ target, suffix = "+" }: { target: number; suffix?: str
   }, [target]);
 
   return (
-    <b ref={ref}>
+    <b ref={ref} className={className}>
       {val}
       {suffix}
     </b>
