@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import { clients } from "@/lib/site";
 
 export function Clients() {
@@ -9,9 +12,20 @@ export function Clients() {
         <div className="marquee">
           <div className="marquee-track">
             {loop.map((c, i) => (
-              <span className="client-chip" key={i}>
-                <span className="dot" />
-                {c}
+              <span
+                className="client-logo"
+                key={`${c.src}-${i}`}
+                onContextMenu={(e) => e.preventDefault()}
+                onDragStart={(e) => e.preventDefault()}
+              >
+                <Image
+                  src={c.src}
+                  alt={c.name}
+                  width={180}
+                  height={48}
+                  className="client-logo-img"
+                  draggable={false}
+                />
               </span>
             ))}
           </div>

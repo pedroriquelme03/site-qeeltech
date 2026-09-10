@@ -36,7 +36,7 @@ export function Header() {
       <header className={`site-header${scrolled ? " scrolled" : ""}`}>
         <div className="container nav">
           <a href="#home" className="brand" aria-label="QeeL Tech — início">
-            <Image src="/logo-white.svg" alt="QeeL" width={110} height={30} priority />
+            <Image src="/LogoQeel_Bold.png" alt="QeeL" width={120} height={45} priority />
           </a>
           <nav className="nav-links" aria-label="Navegação principal">
             {links.map((l) => (

@@ -1,8 +1,5 @@
 "use client";
 
-// Source: 21st.dev — "Text Rotate" by @danielpetho (fancycomponents.dev)
-// https://21st.dev/@danielpetho/components/text-rotate
-
 import {
   forwardRef,
   useCallback,

@@ -48,7 +48,6 @@ export function Contact() {
       <div className="container">
         <div className="contact-grid">
           <Reveal className="contact-aside">
-            <span className="eyebrow">Fale conosco</span>
             <h2>
               Vamos tirar sua ideia <span className="text-grad">do papel?</span>
             </h2>
@@ -86,7 +85,7 @@ export function Contact() {
                 </span>
                 <div>
                   <b>Atendimento</b>
-                  <span>Foz do Iguaçu · PR e todo o Brasil (remoto)</span>
+                  <span>Atendimento presencial de Foz do Iguaçu a Cascavel · remoto em todo o Brasil</span>
                 </div>
               </div>
             </div>
@@ -143,7 +142,7 @@ export function Contact() {
                 Enviar pelo WhatsApp
               </button>
               <p className="form-note">
-                Ao enviar, sua mensagem abre no WhatsApp já preenchida. Sem spam, prometido.
+                Ao enviar, sua mensagem abre no WhatsApp já preenchida.
               </p>
             </form>
           </Reveal>

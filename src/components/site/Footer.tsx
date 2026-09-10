@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { EMAIL, NAPOLEON_AFFILIATE, WA_DISPLAY, waLink } from "@/lib/site";
-import { WhatsAppIcon, InstagramIcon, LinkedinIcon } from "@/components/icons";
+import { WhatsAppIcon, InstagramIcon } from "@/components/icons";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Image src="/logo-white.svg" alt="QeeL Tech" width={110} height={30} />
+            <Image src="/LogoQeel_Bold.png" alt="QeeL Tech" width={120} height={45} />
             <p>
               Software house especializada em apps, sites e sistemas web. Tecnologia sob medida
               para o seu negócio crescer.
@@ -18,11 +18,13 @@ export function Footer() {
               <a href={waLink("Olá QeeL Tech!")} target="_blank" rel="noopener" aria-label="WhatsApp">
                 <WhatsAppIcon />
               </a>
-              <a href="#" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/qeeltech/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
                 <InstagramIcon />
-              </a>
-              <a href="#" aria-label="LinkedIn">
-                <LinkedinIcon />
               </a>
             </div>
           </div>
@@ -56,7 +58,6 @@ export function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© {year} QeeL Tech. Todos os direitos reservados.</span>
-          <span>Feito com tecnologia e cafeína em Foz do Iguaçu.</span>
         </div>
       </div>
     </footer>

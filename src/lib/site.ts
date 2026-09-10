@@ -66,6 +66,15 @@ export const products: Product[] = [
 ];
 
 export const clients = [
-  "Bella Massa", "AutoPrime", "Studio Vida", "Rota Delivery", "Clínica Sorriso",
-  "Imob Central", "TicketPro", "MegaPark", "FoodExpress", "Barbearia Rei", "Óptica Visão", "Mercado Bom",
+  { name: "Fogaça Turismo", src: "/logos/clientes/cliente-1.png" },
+  { name: "Talismã", src: "/logos/clientes/cliente-2.png" },
+  { name: "se7en Iguassu Tours", src: "/logos/clientes/cliente-3.png" },
+  { name: "Vivaz Cataratas Resort", src: "/logos/clientes/cliente-4.png" },
+  { name: "Aqua Mania", src: "/logos/clientes/cliente-5.png" },
+  { name: "Movility", src: "/logos/clientes/cliente-6.png" },
+  { name: "Yes Iguassu Turismo", src: "/logos/clientes/cliente-7.png" },
+  { name: "Cliente", src: "/logos/clientes/cliente-8.png" },
+  { name: "PRO group ON", src: "/logos/clientes/cliente-9.png" },
+  { name: "Recanto Cataratas", src: "/logos/clientes/cliente-10.png" },
+  { name: "Vivaz Cataratas Boutique", src: "/logos/clientes/cliente-11.png" },
 ];

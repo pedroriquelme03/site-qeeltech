@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "motion/react";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import AetherFlowHero from "@/components/ui/aether-flow-hero";
 import { TextRotate } from "@/components/ui/text-rotate";
 import { waLink } from "@/lib/site";
@@ -26,21 +26,8 @@ export function Hero() {
   return (
     <AetherFlowHero id="home" className="hero">
       <div className="relative z-10 px-6 py-24 text-center">
-        <motion.div
-          custom={0}
-          variants={fadeUpVariants}
-          initial="hidden"
-          animate="visible"
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-purple-500/20 bg-purple-500/10 px-4 py-1.5 backdrop-blur-sm"
-        >
-          <Zap className="h-4 w-4 text-purple-400" />
-          <span className="text-sm font-medium text-gray-200">
-            Software house · Foz do Iguaçu &amp; região
-          </span>
-        </motion.div>
-
         <motion.h1
-          custom={1}
+          custom={0}
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
@@ -49,22 +36,24 @@ export function Hero() {
           <span className="block bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
             Tecnologia que constrói
           </span>
-          <span className="mt-1 flex flex-wrap items-baseline justify-center overflow-hidden pb-[0.12em]">
+          <span className="mt-1 flex min-h-[1.15em] flex-wrap items-baseline justify-center">
             <TextRotate
               texts={words}
-              mainClassName="justify-center bg-gradient-to-b from-purple-200 to-purple-400 bg-clip-text text-transparent"
-              elementLevelClassName="bg-gradient-to-b from-purple-200 to-purple-400 bg-clip-text text-transparent"
+              mainClassName="justify-center text-[#C084FC]"
               staggerFrom="last"
-              staggerDuration={0.02}
-              rotationInterval={2400}
-              splitLevelClassName="overflow-hidden"
-              transition={{ type: "spring", damping: 28, stiffness: 320 }}
+              initial={{ y: "100%", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "-120%", opacity: 0 }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-1"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2000}
             />
           </span>
         </motion.h1>
 
         <motion.p
-          custom={2}
+          custom={1}
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
@@ -76,7 +65,7 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          custom={3}
+          custom={2}
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
@@ -88,7 +77,7 @@ export function Hero() {
             )}
             target="_blank"
             rel="noopener"
-            className="mx-auto flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold text-black shadow-lg transition-colors duration-300 hover:bg-gray-200 sm:mx-0"
+            className="mx-auto flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold !text-[#4C1D95] shadow-lg transition-colors duration-300 hover:bg-gray-200 sm:mx-0"
           >
             Começar meu projeto
             <ArrowRight className="h-5 w-5" />
@@ -102,7 +91,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          custom={4}
+          custom={3}
           variants={fadeUpVariants}
           initial="hidden"
           animate="visible"
