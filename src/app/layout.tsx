@@ -18,7 +18,11 @@ export const metadata: Metadata = {
   description:
     "QeeL Tech: aplicativos mobile, sites WordPress, sistemas web, plugins, e-mail profissional, SEO e produtos digitais sob medida para o seu negócio.",
   icons: {
-    icon: [{ url: "/LogoQeel_Bold_Simplificado_Fundo.png", type: "image/png" }],
+    icon: [
+      { url: "/LogoQeel_Bold_Simplificado_Fundo.png", type: "image/png", sizes: "any" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/LogoQeel_Bold_Simplificado_Fundo.png",
     apple: "/LogoQeel_Bold_Simplificado_Fundo.png",
   },
   openGraph: {
